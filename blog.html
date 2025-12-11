@@ -2,72 +2,54 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <title>Блог - honeynil</title>
     <meta name="description" content="Статьи о разработке на Go, архитектуре и лучших практиках">
+
+    <link rel="preload" href="style.css" as="style">
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #0d0d0d;
+            color: #fff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+    </style>
 </head>
 <body>
     <ul class="lightrope">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li></li><li></li><li></li><li></li><li></li>
+        <li></li><li></li><li></li><li></li><li></li>
+        <li></li><li></li><li></li><li></li><li></li>
+        <li></li><li></li><li></li><li></li><li></li>
     </ul>
 
     <div class="honeycomb-bg">
-        <div class="snowflake"></div>
-        <div class="snowflake"></div>
-        <div class="snowflake"></div>
-        <div class="snowflake"></div>
-        <div class="snowflake"></div>
-        <div class="snowflake"></div>
-        <div class="snowflake"></div>
-        <div class="snowflake"></div>
-        <div class="snowflake"></div>
-        <div class="snowflake"></div>
-        <div class="snowflake"></div>
-        <div class="snowflake"></div>
-        <div class="snowflake"></div>
-        <div class="snowflake"></div>
-        <div class="snowflake"></div>
-        <div class="snowflake"></div>
-        <div class="snowflake"></div>
-        <div class="snowflake"></div>
-        <div class="snowflake"></div>
-        <div class="snowflake"></div>
-        <div class="snowflake"></div>
-        <div class="snowflake"></div>
-        <div class="snowflake"></div>
-        <div class="snowflake"></div>
+        <div class="snowflake"></div><div class="snowflake"></div>
+        <div class="snowflake"></div><div class="snowflake"></div>
+        <div class="snowflake"></div><div class="snowflake"></div>
+        <div class="snowflake"></div><div class="snowflake"></div>
+        <div class="snowflake"></div><div class="snowflake"></div>
+        <div class="snowflake"></div><div class="snowflake"></div>
+        <div class="snowflake"></div><div class="snowflake"></div>
+        <div class="snowflake"></div><div class="snowflake"></div>
+        <div class="snowflake"></div><div class="snowflake"></div>
+        <div class="snowflake"></div><div class="snowflake"></div>
+        <div class="snowflake"></div><div class="snowflake"></div>
+        <div class="snowflake"></div><div class="snowflake"></div>
         <div class="snowflake"></div>
     </div>
 
     <div class="floating-bees">
-        <div class="bee">🐝</div>
-        <div class="bee">🐝</div>
-        <div class="bee">🐝</div>
-        <div class="bee">🐝</div>
-        <div class="bee">🐝</div>
-        <div class="bee">🐝</div>
-        <div class="bee">🐝</div>
-        <div class="bee">🐝</div>
+        <div class="bee">🐝</div><div class="bee">🐝</div>
+        <div class="bee">🐝</div><div class="bee">🐝</div>
+        <div class="bee">🐝</div><div class="bee">🐝</div>
+        <div class="bee">🐝</div><div class="bee">🐝</div>
     </div>
 
     <div class="container">
@@ -76,7 +58,7 @@
 
             <header class="blog-header">
                 <div class="bee-icon">📝</div>
-                <h1></h1>
+                <h1>Блог</h1>
                 <p class="blog-subtitle">Заметки о разработке, учебе и рефлексии на пути</p>
             </header>
 
@@ -92,7 +74,7 @@
                         Разобрал как идиоматичней структурировать свои проекты, и почему "исторические практики", вносят лишний оверхед.
                     </p>
                     <div class="article-footer">
-                        <a href="https://t.me/honeynil_tech/6" target="_blank" class="read-more">
+                        <a href="https://t.me/honeynil_tech/6" target="_blank" rel="noopener" class="read-more">
                             Читать →
                         </a>
                     </div>
@@ -104,12 +86,12 @@
                         <span class="article-tag">python, AI</span>
                         <span class="article-date">15 декабря 2025</span>
                     </div>
-                    <h2> Подружился с AI-агентом</h2>
+                    <h2>Подружился с AI-агентом</h2>
                     <p class="article-excerpt">
                         Написал первого AI-агента и внезапно мне ...
                     </p>
                     <div class="article-footer">
-                        <a href="https://t.me/honeynil_tech" target="_blank" class="read-more">
+                        <a href="https://t.me/honeynil_tech" target="_blank" rel="noopener" class="read-more">
                             Читать →
                         </a>
                     </div>
@@ -126,7 +108,7 @@
                         Поговорим про миграции в go и как пришла идея написать свою библиотеку для миграций.
                     </p>
                     <div class="article-footer">
-                        <a href="https://t.me/honeynil_tech" target="_blank" class="read-more">
+                        <a href="https://t.me/honeynil_tech" target="_blank" rel="noopener" class="read-more">
                             Читать →
                         </a>
                     </div>
@@ -134,7 +116,7 @@
             </div>
 
             <footer class="blog-footer">
-                <p>🍯 Все статьи публикуются в моём <a href="https://t.me/honeynil_tech" target="_blank">Telegram канале</a></p>
+                <p>🍯 Все статьи публикуются в моём <a href="https://t.me/honeynil_tech" target="_blank" rel="noopener">Telegram канале</a></p>
             </footer>
         </div>
     </div>
